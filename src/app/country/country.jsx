@@ -22,6 +22,8 @@ export default function Country() {
 
         const data = await response.json();
         setCountry(data); // Assuming data is an array of countries
+        console.log(data.data[0].name);
+        console.log(data);
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
