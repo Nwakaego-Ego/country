@@ -21,7 +21,7 @@ export default function Country() {
         }
 
         const data = await response.json();
-        setCountry(data); // Assuming data is an array of countries
+        setCountry(data.data); // Assuming data is an array of countries
         console.log(data.data[0].name);
         console.log(data);
       } catch (error) {
